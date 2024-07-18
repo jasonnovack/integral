@@ -1,136 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <title>Public Artifacts</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integral Labs</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1, h2, h3 {
-            color: #0056b3;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin: 0 10px;
-            color: #0056b3;
-            text-decoration: none;
-        }
-        .hero {
-            background: #f4f4f4;
-            padding: 50px 20px;
-        }
-        .section {
-            padding: 20px 0;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fff;
-            background: #0056b3;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .logo {
-            font-family: 'Arial', sans-serif;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            text-align: center;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="logo">Integral Labs</div>
-    <div class="container">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <div id="home" class="hero">
-            <h1>Building a More Connected World</h1>
-            <p>Innovative Solutions in Tech, Media, and Biotech</p>
-            <a href="#about" class="cta-button">Learn More</a>
-        </div>
-
-        <div id="about" class="section">
-            <h2>About Us</h2>
-            <p>Integral Labs is an Innovation Studio empowering innovation to shape the future of technology and creativity.</p>
-            <p>Our journey has been marked by our commitment to driving progress across diverse industries including web3, blockchain, media, biotech, and AI.</p>
-        </div>
-
-        <div id="services" class="section">
-            <h2>Our Services</h2>
-            <h3>Consulting</h3>
-            <p>Fractional COO, Product Strategy, Financial Advisory</p>
-            <h3>Venture Building</h3>
-            <p>Product Development, Go-to-Market Strategy, Scaling Operations</p>
-            <h3>Investments</h3>
-            <p>Seed Funding, Strategic Partnerships</p>
-        </div>
-
-        <div id="portfolio" class="section">
-            <h2>Portfolio</h2>
-            <p>Web3 Venture Studio, Web3 Startup Accelerator, Onchain Affiliate Fees System, Open Source Code Citations, Film Production Studio, Blockchain Software Development Company, Biotech Hedge Fund, AI-Powered Marketing Tool</p>
-        </div>
-
-        <div id="contact" class="section">
-            <h2>Contact Us</h2>
-            <form>
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-            <p>Email: contact@integrallabs.com</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Integral Labs. All rights reserved.</p>
-    </footer>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://publicartifacts.xyz" />
+    <meta property="og:title" content="Public Artifacts" />
+    <meta property="og:description" content="A social technology studio exploring community dynamics and public goods." />
+    <meta property="og:image" content="https://publicartifacts.xyz/images/unfurl_2_1.png" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publicartifacts">
+    <meta name="twitter:title" value="Public Artifacts" />
+    <meta name="twitter:description" value="A social technology studio exploring community dynamics and public goods." />
+    <meta name="twitter:image" content="https://publicartifacts.xyz/images/unfurl_1_1.png" />
     <script>
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for contacting us!');
-        });
+      window.onload = function () {
+        document.getElementById('zero').getElementsByClassName('title')[0].addEventListener('click', () => {
+          if (document.getElementById('zeroDetail').style.display == '' || document.getElementById('zeroDetail').style.display == 'none') {
+            document.getElementById('zeroDetail').style.display = 'block';
+            document.getElementById('oneDetail').style.display = 'none';
+          } else {
+            document.getElementById('zeroDetail').style.display = 'none';
+          };
+        }, false);
+
+        document.getElementById('one').getElementsByClassName('title')[0].addEventListener('click', () => {
+          if (document.getElementById('oneDetail').style.display == '' || document.getElementById('oneDetail').style.display == 'none') {
+            document.getElementById('oneDetail').style.display = 'block';
+            document.getElementById('zeroDetail').style.display = 'none';
+          } else {
+            document.getElementById('oneDetail').style.display = 'none';
+          };
+        }, false);
+      };
     </script>
-</body>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <!-- source |Logo created with Hatchful by Shopify: https://www.shopify.com/tools/logo-maker -->
+          <img id="logoImg" src="/images/logo2_transparent.png">
+        </div>
+        <div>
+          <div class="social" id="socialDesktop">
+            <!-- source |Twitter icon modified from one created by Md Tanvirul Haque via Flaticon: https://www.flaticon.com/free-icons/twitter -->
+            <a href="https://twitter.com/publicartifacts" target="_blank"><img class="socialImg" src="/images/social_twitter.png"></a>
+            <!-- source |Github icon modified from one created by NajmunNahar via Flaticon: https://www.flaticon.com/free-icons/github -->
+            <a href="https://github.com/orgs/Public-Artifacts/repositories" target="_blank"><img class="socialImg" src="/images/social_github.png"></a>
+            <a href="https://mirror.xyz/publicartifacts.eth" target="_blank"><img class="socialImg" src="/images/social_mirror.png"></a>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div>
+          <p id="desc">A social technology studio exploring community dynamics and public goods.</p>
+          <li id="zero"><div class="title">ARTIFACT 00: CODEBACKS</div>
+            <div id="zeroDetail">
+              <p>An on-chain citation standard for open-source code.</p>
+              <p><a href="https://mirror.xyz/publicartifacts.eth/CgjqE86lbdRHsz_kL2WbDZeW6YjL0Z0tL8rldJnKqWc" target="_blank" >POST</a> | <a href="https://github.com/Public-Artifacts/codebacks" target="_blank" >CODE</a> | <a href="https://etherscan.io/address/0xae033e6811854e64fbad475ee3af7c94dcd2f01b" target="_blank" >EXAMPLE</a></p>
+            </div>
+          </li>
+          <li id="one"><div class="title">ARTIFACT 01: OPEN AFFILIATES</div>
+            <div id="oneDetail">
+              <p>Affiliate rewards for referring smart contract transactions.</p>
+              <p><a href="https://mirror.xyz/publicartifacts.eth/e36VlVOeVoEGLt5Nr2wWp3RqE7D_Wm_PorYF_Paur7w" target="_blank" >POST</a> | <a href="https://github.com/Public-Artifacts/openaffiliates" target="_blank" >CODE</a> </p>
+            </div>
+          </li>
+          <li id="two">ARTIFACT 02: XIXXGXXCE BXT</li>
+          <li id="three">ARTIFACT 03: XMXX FXX NXXX</li>
+          <li id="four">ARTIFACT 04: XXXXXX AS X XXRVXXX</li>
+          <p>Built by <a href="https://twitter.com/jasonnov" target="_blank">Jason Novack</a> and <a href="https://twitter.com/itsbdell" target="_blank">Brian Dell</a>.</p>
+          <br>
+          <div class="social" id="socialMobile">
+            <!-- source |Twitter icon modified from one created by Md Tanvirul Haque via Flaticon: https://www.flaticon.com/free-icons/twitter -->
+            <a href="https://twitter.com/publicartifacts" target="_blank"><img class="socialImg" src="/images/social_twitter.png"></a>
+            <!-- source |Github icon modified from one created by NajmunNahar via Flaticon: https://www.flaticon.com/free-icons/github -->
+            <a href="https://github.com/orgs/Public-Artifacts/repositories" target="_blank"><img class="socialImg" src="/images/social_github.png"></a>
+            <a href="https://mirror.xyz/publicartifacts.eth" target="_blank"><img class="socialImg" src="/images/social_mirror.png"></a>
+          </div>
+        </div>
+        <div id="credo">
+          <p>We codeback because we care.</p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
