@@ -1,7 +1,7 @@
 /* source |Montserrat typeface by Julieta Ulanovsky via Google Fonts: https://fonts.google.com/specimen/Montserrat?query=montserrat */
 @font-face {
   font-family: Montserrat; 
-  src: url('/src/Montserrat-VariableFont_wght.ttf');
+  src: url('src/Montserrat-VariableFont_wght.ttf');
   font-weight: 100 1000; 
 }
 
