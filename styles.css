@@ -7,13 +7,11 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: Montserrat, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+/*  font-weight: 300;*/
   color: #111111;
-  background: linear-gradient(135deg, #fafafa 0%, #dcdcdc 100%);
-  background-image: radial-gradient(circle, #e0e0e0 1px, rgba(255, 255, 255, 0) 1px);
-  background-size: 20px 20px;
+  background: linear-gradient(180deg, #fafafa 0%, #F9F8EB 100%);
   text-rendering: optimizeLegibility;
   overflow: clip;
 }
@@ -172,4 +170,52 @@ li a:hover {
   #socialMobile {
     display: inherit;
   }
+
+  .table {
+    width: 90%;
+    max-width: 800px;
+}
+
+.projects {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+tbody tr {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+td {
+    padding: 12px 15px;
+}
+
+.arrow {
+    text-align: right;
+    font-size: 18px;
+    color: #111111;
+}
 }
