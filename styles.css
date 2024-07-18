@@ -10,8 +10,8 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: #191BA9;
-  background-color:  #ffffff;
+  color: #111111;
+  background-color:  #fafafa  ;
   text-rendering: optimizeLegibility;
   overflow: clip;
 }
