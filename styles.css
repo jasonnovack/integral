@@ -84,7 +84,7 @@ li p a:hover {
   border-bottom:3px #191BA9 solid;
 }
 
-a {
+/*a {
   color: #191BA9;
 }
 
@@ -94,7 +94,7 @@ p a:hover {
 
 li a:hover {
   font-weight: 1000;
-}
+}*/
 
 #socialMobile {
   display: none;
