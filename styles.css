@@ -11,7 +11,9 @@ body {
   font-size: 1rem;
   font-weight: 300;
   color: #111111;
-  background-color:  #fafafa  ;
+  background: linear-gradient(135deg, #fafafa 0%, #dcdcdc 100%);
+  background-image: radial-gradient(circle, #e0e0e0 1px, rgba(255, 255, 255, 0) 1px);
+  background-size: 20px 20px;
   text-rendering: optimizeLegibility;
   overflow: clip;
 }
