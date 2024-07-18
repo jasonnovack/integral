@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integral Labs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .hero {
+            background: #f4f4f4;
+            padding: 50px 20px;
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background: #0056b3;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .logo {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">Integral Labs</div>
+    <div class="container">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="home" class="hero">
+            <h1>Building a More Connected World</h1>
+            <p>Innovative Solutions in Tech, Media, and Biotech</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>Integral Labs is an Innovation Studio empowering innovation to shape the future of technology and creativity.</p>
+            <p>Our journey has been marked by our commitment to driving progress across diverse industries including web3, blockchain, media, biotech, and AI.</p>
+        </div>
+
+        <div id="services" class="section">
+            <h2>Our Services</h2>
+            <h3>Consulting</h3>
+            <p>Fractional COO, Product Strategy, Financial Advisory</p>
+            <h3>Venture Building</h3>
+            <p>Product Development, Go-to-Market Strategy, Scaling Operations</p>
+            <h3>Investments</h3>
+            <p>Seed Funding, Strategic Partnerships</p>
+        </div>
+
+        <div id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Web3 Venture Studio, Web3 Startup Accelerator, Onchain Affiliate Fees System, Open Source Code Citations, Film Production Studio, Blockchain Software Development Company, Biotech Hedge Fund, AI-Powered Marketing Tool</p>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <p>Email: contact@integrallabs.com</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Integral Labs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for contacting us!');
+        });
+    </script>
+</body>
+</html>
