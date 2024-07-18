@@ -53,10 +53,6 @@ section {
   margin-top: 0;
 }
 
-a {
-  font-variant: all-small-caps;
-}
-
 li {
   list-style-type: none;
   font-weight: 700;
@@ -80,36 +76,12 @@ li p a:hover {
   font-weight: 850;
 }
 
-#zeroDetail {
+#detail {
   display: none;
   margin:0;
   padding:0.5rem 0;
   border-top:3px #191BA9 solid;
   border-bottom:3px #191BA9 solid;
-}
-
-#oneDetail {
-  display: none;
-  margin:0;
-  padding:0.5rem 0;
-  border-top:3px #191BA9 solid;
-  border-bottom:3px #191BA9 solid;
-}
-
-li#two {
-  color: #BABDF3;
-}
-
-li#three {
-  color: #CBCEF6;
-}
-
-li#four {
-  color: #DCDEF9;
-}
-
-li#five {
-  color: #EDEEFC;
 }
 
 a {
