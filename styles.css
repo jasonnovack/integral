@@ -1,63 +1,114 @@
 body {
-  background: linear-gradient(180deg, #fafafa 0%, #F9F8EB 100%);
+  background: linear-gradient(135deg, #fafafa 0%, #F9F8EB 100%);
   color: #111111;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
-.header, .section {
+.container {
   width: 90%;
   max-width: 800px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px;
+}
+
+/*.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5vw;
+  width: 5vw;
+  height: 100%;
+  background-color: #111111;
+}*/
+
+header, section {
+  width: 90%;
+  display: block;
+}
+
+header {
+  background-color: #F9F8EB;
+  border-top: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.desc {
+/*  margin: 30px 0;*/
+}
+
+.logoImg {
+  max-width: 300px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.1em;
+  font-weight: 200;
   color: #111111;
-  margin-bottom: 10px;
+/*  margin-bottom: 30px;*/
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 10px 0;
-  font-size: 16px;
+/*  margin: 30px 0;*/
+  font-size: 0.8em;
   text-align: left;
 }
 
 .project-name {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.project-description {
-  display: none;
+  font-weight: 400;
 }
 
 tr {
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-bottom: 2px solid #ffffff;
 }
 
 tr:hover {
-  background-color: #F9F8EB;
+  background-color: #ffffff;
 }
 
-tr:hover + .project-description {
-  display: block;
-}
-
-td {
+td, th, .desc {
   padding: 12px 15px;
+}
+
+th {
+  font-family: 'Krona One', sans-serif;
+  text-transform: uppercase;
+  background-color: #F9F8EB;/*
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;*/
 }
 
 .arrow {
   text-align: right;
   font-size: 18px;
   color: #111111;
+}
+
+a {
+  color: #111111;
+  font-variant: all-small-caps;
+}
+
+@media screen and (max-width: 45rem ) {
+  .project-description {
+    display: none;
+  }
+
+  .logoImg {
+    width: 100%;
+  }
 }
