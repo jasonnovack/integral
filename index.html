@@ -16,134 +16,123 @@
     <meta name="twitter:title" value="Public Artifacts" />
     <meta name="twitter:description" value="A social technology studio exploring community dynamics and public goods." />
     <meta name="twitter:image" content="https://publicartifacts.xyz/images/unfurl_1_1.png" />
-    <script>
-      window.onload = function () {
-        document.getElementById('zero').getElementsByClassName('title')[0].addEventListener('click', () => {
-          if (document.getElementById('zeroDetail').style.display == '' || document.getElementById('zeroDetail').style.display == 'none') {
-            document.getElementById('zeroDetail').style.display = 'block';
-            document.getElementById('oneDetail').style.display = 'none';
-          } else {
-            document.getElementById('zeroDetail').style.display = 'none';
-          };
-        }, false);
-
-        document.getElementById('one').getElementsByClassName('title')[0].addEventListener('click', () => {
-          if (document.getElementById('oneDetail').style.display == '' || document.getElementById('oneDetail').style.display == 'none') {
-            document.getElementById('oneDetail').style.display = 'block';
-            document.getElementById('zeroDetail').style.display = 'none';
-          } else {
-            document.getElementById('oneDetail').style.display = 'none';
-          };
-        }, false);
-      };
-    </script>
   </head>
   <body>
-    <main>
-      <header>
-        <div>
-          <!-- source |Logo created with Hatchful by Shopify: https://www.shopify.com/tools/logo-maker -->
-          <img id="logoImg" src="images/logo2_transparent.png">
+    <header>
+      <div>
+        <img id="logoImg" src="images/logo.png">
+      </div>
+      <!-- <div>
+        <div class="social" id="socialDesktop">
+          <a href="https://twitter.com/publicartifacts" target="_blank"><img class="socialImg" src="images/social_twitter.png"></a>
+          <a href="https://github.com/orgs/Public-Artifacts/repositories" target="_blank"><img class="socialImg" src="images/social_github.png"></a>
+          <a href="https://mirror.xyz/publicartifacts.eth" target="_blank"><img class="socialImg" src="images/social_mirror.png"></a>
         </div>
-        <div>
-          <div class="social" id="socialDesktop">
-            <!-- source |Twitter icon modified from one created by Md Tanvirul Haque via Flaticon: https://www.flaticon.com/free-icons/twitter -->
-            <a href="https://twitter.com/publicartifacts" target="_blank"><img class="socialImg" src="images/social_twitter.png"></a>
-            <!-- source |Github icon modified from one created by NajmunNahar via Flaticon: https://www.flaticon.com/free-icons/github -->
-            <a href="https://github.com/orgs/Public-Artifacts/repositories" target="_blank"><img class="socialImg" src="images/social_github.png"></a>
-            <a href="https://mirror.xyz/publicartifacts.eth" target="_blank"><img class="socialImg" src="images/social_mirror.png"></a>
-          </div>
-        </div>
-      </header>
-      <section>
-        <div>
-          <h3 id="desc">Integral Labs contributes to a portfolio of cooperative technology and prosocial media projects.</h3>
-            <div class="table">
-                <div class="projects">
-                    <h4>Incubated</h4>
-                    <table>
-                        <tbody>
-                            <tr onclick="location.href='https://apps.apple.com/us/app/soundoff-daily-conversation/id1661147373' target='_blank'">
-                                <td class="project-name">SoundOff</td>
-                                <td>Community media app bringing firsthand stories to public conversations</td>
-                                <td class="arrow">↗</td>
-                            </tr>
-                            <tr onclick="location.href='https://polkadot.polkassembly.io/referenda/730' target='_blank'">
-                                <td class="project-name">Polkadot Community Foundation</td>
-                                <td>Real world legal extension of an onchain DAO</td>
-                                <td class="arrow">↗</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="section">
-                    <h4>Contributed</h4>
-                    <table>
-                        <tbody>
-                            <tr onclick="location.href='https://graphpapercapital.xyz/' target='_blank'">
-                                <td class="project-name">Graph Paper Capital</td>
-                                <td>Startup accelerator supported by an open partner network</td>
-                                <td class="arrow">↗</td>
-                            </tr>
-                            <tr onclick="location.href='https://www.firstgencontent.com/' target='_blank'">
-                                <td class="project-name">FirstGen</td>
-                                <td>Film production and creative studio</td>
-                                <td class="arrow">↗</td>
-                            <tr onclick="location.href='https://www.piedao.org/' target='_blank'">
-                                <td class="project-name">PieDao</td>
-                                <td>Open platform for collectively managed investment portfolios</td>
-                                <td class="arrow">↗</td>
-                            </tr>
-                            <tr>
-                                <td class="project-name">████████████████</td>
-                                <td>Digital music distribution cooperative</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="section">
-                    <h4>Invested</h4>
-                    <table>
-                        <tbody>
-                            <tr onclick="location.href='https://morpho.xyz' target='_blank'">
-                                <td class="project-name">Morpho</td>
-                                <td>Decentralized finance lending protocol</td>
-                                <td class="arrow">↗</td>
-                            </tr>
-                            <tr onclick="location.href='https://prohibition.art/' target='_blank'">
-                                <td class="project-name">Prohibition</td>
-                                <td>Open platform for creating generative art</td>
-                                <td class="arrow">↗</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-<!-- 
-
-          <ul>
-            <li id="zero"><div class="title">VAULT BY CNN [join]: Online community for art inspired by world events</div>
-              <div class="detail">
-                <p>Community for art inspired by world events.</p>
-                <p><a href="https://mirror.xyz/publicartifacts.eth/CgjqE86lbdRHsz_kL2WbDZeW6YjL0Z0tL8rldJnKqWc" target="_blank" >POST</a> | <a href="https://github.com/Public-Artifacts/codebacks" target="_blank" >CODE</a> | <a href="https://etherscan.io/address/0xae033e6811854e64fbad475ee3af7c94dcd2f01b" target="_blank" >EXAMPLE</a></p>
-              </div>
-            </li>
-            
-            </li>
-            <li>██████████████ [join]: Audience-driven blockchain venture studio</li>
-            <li>█████████ [incubate]: Community blockchain investment cooperative</li>
-            <li>CHANGEUP [incubate]: Autonomous agent leading product marketing for open source projects</li>
-            <li>PROHIBITION.ART [invest]: Open platform for creating generative art</li>
-            <li>BAGEL NETWORK [invest]: </li>
-            <li>CAPSULE [invest]: </li>
-            <li>CRYPTOYS [invest]: </li>
-          </ul> -->
-        </div>
-        <div id="credo">
-          <p><a href="https://twitter.com/jasonnov" target="_blank">Contact us.</a></p>
-        </div>
-      </section>
-    </main>
+      </div> -->
+    </header>
+    <section>
+      <div class="desc">
+        <h2>Integral Labs supports the creation of pro-social media and technology. We incubate, contribute to, and invest in a portfolio of projects, with a particular focus on open protocols and cooperative governance.</h2>
+      </div>
+      <div class="table">
+        <table>
+          <tbody>
+            <tr class="table-group-heading">
+              <th class="project-name" colspan=3>Incubate</td>
+            </tr>
+            <tr onclick="window.open('https://polkadot.polkassembly.io/referenda/730','_blank')">
+              <td class="project-name">Polkadot Community Foundation</td>
+              <td class="project-description">Offchain subsidiary of a DAO</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://apps.apple.com/us/app/soundoff-daily-conversation/id1661147373','_blank')">
+              <td class="project-name">SoundOff</td>
+              <td class="project-description">Sourcing authentic voices for our public conversations</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr>
+              <td class="project-name">█████████</td>
+              <td class="project-description">Activist investor DAO</td>
+            </tr>
+            <tr>
+              <td class="project-name">ChangeUp</td>
+              <td class="project-description">AI marketing agents for open source communities</td>
+            </tr>
+            <tr class="table-group-heading">
+              <th class="project-name" colspan=3>Contribute</td>
+            </tr>
+            <tr onclick="window.open('https://www.firstgencontent.com/','_blank')">
+              <td class="project-name">FirstGen</td>
+              <td class="project-description">Film and emerging media production company</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://graphpapercapital.xyz/','_blank')">
+              <td class="project-name">Graph Paper Capital</td>
+              <td class="project-description">Startup accelerator with an open partnership</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr>
+              <td class="project-name">██████████████</td>
+              <td class="project-description">Decentralized finance product studio</td>
+            </tr>
+            <tr onclick="window.open('https://www.piedao.org/','_blank')">
+              <td class="project-name">PieDao</td>
+              <td class="project-description">Collectively managed investment portfolios</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr>
+              <td class="project-name">████████████████</td>
+              <td class="project-description">Digital music distribution co-op</td>
+            </tr>
+            <tr class="table-group-heading">
+              <th class="project-name" colspan=3>Invest</td>
+            </tr>
+            <tr onclick="window.open('https://morpho.xyz/','_blank')">
+              <td class="project-name">Morpho</td>
+              <td class="project-description">Peer-to-peer lending protocol</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://www.bagel.net/','_blank')">
+              <td class="project-name">Bagel Network</td>
+              <td class="project-description">Collaborative AI development platform</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://prohibition.art/','_blank')">
+              <td class="project-name">Prohibition</td>
+              <td class="project-description">Open platform for creating generative art</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://cryptoys.com/','_blank')">
+              <td class="project-name">Cryptoys</td>
+              <td class="project-description">Digital toy company</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://www.quicknode.com/streams/','_blank')">
+              <td class="project-name">Quicknode</td>
+              <td class="project-description">Real-time data for blockchain applications</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://www.gummi.fi/','_blank')">
+              <td class="project-name">Gummi Finance</td>
+              <td class="project-description">Permissionless money markets</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://marginal.network/','_blank')">
+              <td class="project-name">Marginal Finance</td>
+              <td class="project-description">Permissionless futures exchange</td>
+              <td class="arrow">↗</td>
+            </tr>
+            <tr onclick="window.open('https://capsule.video/','_blank')">
+              <td class="project-name">Capsule</td>
+              <td class="project-description">AI-assisted video editing platform</td>
+              <td class="arrow">↗</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+      <div id="credo">
+        <p><a href="https://twitter.com/jasonnov" target="_blank">Contact us.</a></p>
+      </div>
+    </section>
   </body>
 </html>

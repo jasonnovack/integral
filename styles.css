@@ -1,221 +1,63 @@
-/* source |Montserrat typeface by Julieta Ulanovsky via Google Fonts: https://fonts.google.com/specimen/Montserrat?query=montserrat */
-/*@font-face {
-  font-family: Montserrat; 
-  src: url('src/Montserrat-VariableFont_wght.ttf');
-  font-weight: 100 1000; 
-}*/
-
 body {
-  -webkit-font-smoothing: antialiased;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1rem;
-/*  font-weight: 300;*/
-  color: #111111;
   background: linear-gradient(180deg, #fafafa 0%, #F9F8EB 100%);
-  text-rendering: optimizeLegibility;
-  overflow: clip;
-}
-
-/* source | Layout with header on left for large screens and top for small screens inspired by Sidey by Ronalds Vilciņš: https://github.com/ronv/sidey */
-main {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 50rem;
-  margin: 2rem auto;
-  padding: 1rem;
-  height: calc(100vh - 6rem);
-}
-
-header {
-  flex-basis: 10rem;
-  flex-grow: 1;
-  position: relative;
-  padding: 1rem;
-  justify-content: space-between;
-}
-
-section {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: 70%;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  justify-content: space-between;
-}
-
-#logoImg {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.table {
-    width: 90%;
-    max-width: 800px;
-  }
-
-  .projects {
-      margin-bottom: 30px;
-  }
-
-  h2 {
-      font-family: 'Krona One', sans-serif;
-      font-size: 24px;
-      color: #111111;
-      margin-bottom: 10px;
-  }
-
-  table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 10px 0;
-      font-size: 16px;
-      text-align: left;
-  }
-
-  tbody tr {
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  }
-
-  tbody tr:hover {
-      background-color: #f1f1f1;
-  }
-
-  .project-name {
-      font-weight: bold;
-      font-size: 18px;
-  }
-
-  td {
-      padding: 12px 15px;
-  }
-
-  .arrow {
-      text-align: right;
-      font-size: 18px;
-      color: #111111;
-  }
-
-#/*desc {
-  margin-top: 0;
-}*/
-
-/*li {
-  list-style-type: none;
-  font-weight: 700;
-}
-
-
-li p {
-  font-weight:300;
-  margin:0;
-}
-
-li p a:hover {
-  font-weight:600;
-}*/
-
-.title {
-  cursor: pointer;
-}
-
-.title:hover {
-  font-weight: 850;
-}
-
-.detail {
-  display: none;
-  margin:0;
-  padding:0.5rem 0;
-  border-top:3px #191BA9 solid;
-  border-bottom:3px #191BA9 solid;
-}
-
-/*a {
-  color: #191BA9;
-}
-
-p a:hover {
-  font-weight: 600;
-}
-
-li a:hover {
-  font-weight: 1000;
-}*/
-
-#socialMobile {
-  display: none;
-}
-
-#socialDesktop {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 1rem;
-}
-
-.socialImg {
-  height: 1.5rem;
-  padding: 0.1rem;
-}
-
-.socialImg:hover {
-  height:1.7rem;
+  color: #111111;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-#credo {
-  margin-bottom: 0.5rem;
+.header, .section {
+  width: 90%;
+  max-width: 800px;
+  margin-bottom: 30px;
 }
 
-#credo p {
-  margin-bottom: 0;
+h2 {
+  font-size: 24px;
+  color: #111111;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 45rem ) {
-  main {
-    margin: 0 auto;
-    padding: 0.5rem;
-    height: calc(100vh - 2rem);
-    align-content: flex-start;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+}
 
-  header {
-    height: 5rem;
-    display: inline;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+.project-name {
+  font-weight: bold;
+  font-size: 18px;
+}
 
-  section {
-    padding: 1rem 0;
-  }
+.project-description {
+  display: none;
+}
 
- /* li {
-    line-height: 1.5rem;
-  }*/
+tr {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  header div:first-child {
-    height: 100%;
-  }
+tr:hover {
+  background-color: #F9F8EB;
+}
 
-  #credo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 1rem;
-  }
+tr:hover + .project-description {
+  display: block;
+}
 
-  #logoImg {
-    float: right;
-  }
+td {
+  padding: 12px 15px;
+}
 
-  #socialDesktop {
-    display: none;
-  }
-
-  #socialMobile {
-    display: inherit;
-  }
+.arrow {
+  text-align: right;
+  font-size: 18px;
+  color: #111111;
 }
