@@ -60,16 +60,6 @@ table {
   text-align: left;
 }
 
-/*table::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -16px;
-  width: 16px;
-  height: 100%;
-  background-color: #111111;
-}*/
-
 .project-name {
   font-weight: 400;
 }
@@ -81,9 +71,8 @@ tr {
   height: 48px;
 }
 
-tr:hover {
+tr:has(td.arrow svg):hover {
   background-color: #ffffff;
-/*  transition: background-color 0.5s ease;*/
 }
 
 td, th, .desc {
@@ -104,9 +93,15 @@ th {
   color: #111111;
 }
 
+.arrow svg {
+  margin: 0 auto;
+  display: block;
+}
+
 a {
   color: #111111;
   font-variant: all-small-caps;
+  display: inline-block;
 }
 
 a:hover {
