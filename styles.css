@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(-45deg, #fafafa 0%, #FEFCE2 100%);
+  background: linear-gradient(-45deg, #fafafa, #F9F8EB);
   color: #111111;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 200;
@@ -38,7 +38,7 @@ header, section {
 }
 
 header {
-  background: linear-gradient(135deg, #FEFCE2 100%, #FEFCE2 0%);
+  background: linear-gradient(135deg, #FEFCE2, #FEFCE200);
   border-top: 1px solid #ffffff;
   border-bottom: 2px solid #ffffff;
 }
@@ -94,7 +94,7 @@ th {
   font-family: 'Krona One', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #FEFCE2 100%, #FEFCE2 0%);  
+  background: linear-gradient(135deg, #FEFCE2, #FEFCE200);
   font-variant: all-small-caps;
 }
 
@@ -114,6 +114,10 @@ a:hover {
 }
 
 @media screen and (max-width: 45rem ) {
+  body {
+    background: linear-gradient(-45deg, #fafafa, #F8F7E9);
+  }
+  
   .container {
     width: 100%;
   }
