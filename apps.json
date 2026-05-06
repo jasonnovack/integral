@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "apps": [
+    {
+      "name": "Burnrate",
+      "url": "https://github.com/burnrate-cc/burnrate/",
+      "tags": ["ai", "gaming"],
+      "vibe_coded": true,
+      "source": "https://github.com/burnrate-cc/burnrate/"
+    },
+    {
+      "name": "Codebacks",
+      "url": "https://mirror.xyz/publicartifacts.eth/CgjqE86lbdRHsz_kL2WbDZeW6YjL0Z0tL8rldJnKqWc",
+      "tags": ["onchain"]
+    },
+    {
+      "name": "Entendre",
+      "url": "https://dashboard-production-2b31.up.railway.app/",
+      "tags": ["ai", "research"],
+      "vibe_coded": true
+    },
+    {
+      "name": "ExitPop",
+      "url": "https://www.exitpopai.com/",
+      "tags": ["ai", "shopify", "ecommerce"],
+      "vibe_coded": true
+    },
+    {
+      "name": "Open Affiliates",
+      "url": "https://mirror.xyz/publicartifacts.eth/e36VlVOeVoEGLt5Nr2wWp3RqE7D_Wm_PorYF_Paur7w",
+      "tags": ["onchain"]
+    },
+    {
+      "name": "SoundOff",
+      "url": "https://soundoff.gitbook.io/soundoff/",
+      "tags": ["social", "audio"]
+    },
+    {
+      "name": "Suncoast",
+      "url": "https://suncoast.cc/",
+      "tags": ["agency"]
+    },
+    {
+      "name": "Underline",
+      "url": "https://underlineadvisors.com/",
+      "tags": ["advisory", "acquisitions"]
+    }
+  ]
+}
